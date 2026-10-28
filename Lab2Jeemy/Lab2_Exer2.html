@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+</head>
+<body>
+
+    <!--TASK 3: Semantic header and nav tags-->
+    <header>
+        <h1>My Personal Profile</h1>
+        <nav>
+            <ul>
+                <li><a href="#profile-data">Profile Data</a></li>
+                <li><a href="#survey-form">Join Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--TASK 3: Semantic section and article tags-->
+        <section id="profile-data">
+            <h2>About Me</h2>
+            <article>
+                <h3>Personal Information Table</h3>
+                
+                <!--TASK 1: Table with 3 rows and 3 columns covering personal info-->
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Occupation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alex Morgan</td>
+                            <td>26</td>
+                            <td>Software Engineer</td>
+                        </tr>
+                        <tr>
+                            <td>Jordan Lee</td>
+                            <td>31</td>
+                            <td>Graphic Designer</td>
+                        </tr>
+                        <tr>
+                            <td>Taylor Taylor</td>
+                            <td>22</td>
+                            <td>Data Analyst</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <!--TASK 3: Another structured section-->
+        <section id="survey-form">
+            <h2>User Registration</h2>
+            <article>
+                <h3>Interests & Details Form</h3>
+                
+                <!--TASK 2: Form with text inputs, radio buttons, checkboxes, and a submit button-->
+                <form action="#" method="POST">
+                    <!--Text inputs for Name and Email-->
+                    <p>
+                        <label for="username">Name:</label>
+                        <input type="text" id="username" name="username" required>
+                    </p>
+                    <p>
+                        <label for="useremail">Email:</label>
+                        <input type="email" id="useremail" name="useremail" required>
+                    </p>
+                    
+                    <!--Radio buttons for Gender-->
+                    <p>
+                        <label>Gender:</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </p>
+
+                    <!--Checkboxes for Favorite Hobbies-->
+                    <p>
+                        <label>Favorite Hobbies:</label><br>
+                        <input type="checkbox" id="hobby1" name="hobbies" value="coding">
+                        <label for="hobby1">Coding</label><br>
+                        <input type="checkbox" id="hobby2" name="hobbies" value="reading">
+                        <label for="hobby2">Reading</label><br>
+                        <input type="checkbox" id="hobby3" name="hobbies" value="gaming">
+                        <label for="hobby3">Gaming</label>
+                    </p>
+
+                    <!--Submit Button-->
+                    <p>
+                        <button type="submit">Submit Form</button>
+                    </p>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <!--TASK 3: Semantic footer tag-->
+    <footer>
+        <p>&copy; 2026 Profile Lab Exercise. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
