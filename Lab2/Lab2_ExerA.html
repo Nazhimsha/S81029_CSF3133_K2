@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Programming Workshop</title>
+</head>
+<body>
+
+    <!--1. SEMANTIC STRUCTURE: HEADER & NAVIGATION-->
+    <header>
+        <h1>Faculty Programming Workshop 2026</h1>
+        <p>Mastering Web Development Fundamentals in One Day</p>
+    </header>
+
+    <nav>
+        <a href="#about">About the Event</a>  
+        <a href="#schedule">Event Schedule</a>  
+        <a href="#register">Registration</a>
+    </nav>
+
+    <hr>
+
+    <!--SECTION 1: ABOUT THE EVENT (With 2 Article Elements)-->
+    <section id="about">
+        <h2>About the Event</h2>
+        
+        <!-- Article 1 -->
+        <article>
+            <h3>Keynote Speaker: Dr. Ahmad</h3>
+            <p>Dr. Ahmad is a senior lecturer with 10 years of experience in web development. He will share industry insights on tech trends.</p>
+        </article>
+
+        <!--Article 2-->
+        <article>
+            <h3>Hands-on Lab Session</h3>
+            <p>Participants will engage in a practical coding session where they will learn how to properly structure layout layers using HTML semantic components.</p>
+        </article>
+    </section>
+
+    <hr>
+
+    <!--SECTION 2: EVENT SCHEDULE TABLE (6 Rows, Rowspan & Colspan)-->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        
+        <!--Table with border="1" and 4 headers-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Venue</th>
+                    <th>Person in Charge</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Row 1-->
+                <tr>
+                    <td>08:30 AM - 09:00 AM</td>
+                    <td>Registration & Breakfast</td>
+                    <td>Main Lobby</td>
+                    <td>Secretariat</td>
+                </tr>
+                <!--Row 2-->
+                <tr>
+                    <td>09:00 AM - 10:30 AM</td>
+                    <td>Keynote Address</td>
+                    <td>Auditorium 1</td>
+                    <td>Dr. Ahmad</td>
+                </tr>
+                <!--Row 3: Using rowspan for consecutive sessions in the same venue-->
+                <tr>
+                    <td>10:30 AM - 12:30 PM</td>
+                    <td>HTML5 Semantics Hands-on</td>
+                    <td rowspan="2">Lab 3 Computer Center</td>
+                    <td>Mr. Tan</td>
+                </tr>
+                <!--Row 4: Second session in Lab 3 (Venue cell is omitted due to rowspan above)-->
+                <tr>
+                    <td>12:30 PM - 01:30 PM</td>
+                    <td>Forms & Tables Challenge</td>
+                    <td>Miss Sarah</td>
+                </tr>
+                <!--Row 5: Using colspan for Lunch Break spanning 2 structural cells-->
+                <tr>
+                    <td>01:30 PM - 02:30 PM</td>
+                    <td>Lunch Break & Networking</td>
+                    <td colspan="2">Faculty Cafeteria</td>
+                </tr>
+                <!--Row 6-->
+                <tr>
+                    <td>02:30 PM - 04:30 PM</td>
+                    <td>Project Presentation & Closing</td>
+                    <td>Auditorium 1</td>
+                    <td>Dr. Ahmad</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!--SECTION 3: REGISTRATION FORM-->
+    <section id="register">
+        <h2>Registration Form</h2>
+        
+        <!--Form setting action and post method-->
+        <form action="register.html" method="post">
+            
+            <!-- Text Input: Full Name -->
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <!--Text Input: Matric Number-->
+            <p>
+                <label for="matric">Matric Number:</label><br>
+                <input type="text" id="matric" name="matric" required>
+            </p>
+
+            <!--Text Input: Email-->
+            <p>
+                <label for="email">E-mail Address:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <!--Radio Buttons: Year of Study (Connected by matching name="year_study")-->
+            <p>
+                <label>Year of Study:</label><br>
+                <input type="radio" id="year1" name="year_study" value="1">
+                <label for="year1">Year 1</label>
+                
+                <input type="radio" id="year2" name="year_study" value="2">
+                <label for="year2">Year 2</label>
+                
+                <input type="radio" id="year3" name="year_study" value="3">
+                <label for="year3">Year 3</label>
+                
+                <input type="radio" id="year4" name="year_study" value="4">
+                <label for="year4">Year 4</label>
+            </p>
+
+            <!--Checkboxes: Session Selection (At least 3 choices)-->
+            <p>
+                <label>Select Sessions to Join:</label><br>
+                <input type="checkbox" id="session1" name="sessions" value="keynote">
+                <label for="session1">Keynote Address</label><br>
+                
+                <input type="checkbox" id="session2" name="sessions" value="semantics">
+                <label for="session2">HTML5 Semantics</label><br>
+                
+                <input type="checkbox" id="session3" name="sessions" value="forms">
+                <label for="session3">Forms & Tables</label>
+            </p>
+
+            <!--Drop-down List: Programme selection (At least 4 choices)-->
+            <p>
+                <label for="programme">Programme / Faculty:</label><br>
+                <select id="programme" name="programme">
+                    <option value="cs">Bachelor of Computer Science</option>
+                    <option value="se">Bachelor of Software Engineering</option>
+                    <option value="it">Bachelor of Information Technology</option>
+                    <option value="math">Bachelor of Mathematics</option>
+                </select>
+            </p>
+
+            <!--Submit Button-->
+            <p>
+                <input type="submit" value="Submit Registration">
+            </p>
+            
+        </form>
+    </section>
+
+    <hr>
+
+    <!--4. SEMANTIC STRUCTURE: FOOTER-->
+    <footer>
+        <p>Organised by: Faculty Computer Club &copy; 2026. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
