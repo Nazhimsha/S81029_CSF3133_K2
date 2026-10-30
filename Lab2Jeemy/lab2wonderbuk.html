@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+</head>
+<body>
+
+    <!--3. Semantic HTML: <header>-->
+    <header>
+        <h1>My Personal Profile</h1>
+    </header>
+
+    <!--3. Semantic HTML: <nav>-->
+    <nav>
+        <a href="#about">About Me</a> | 
+        <a href="#form-section">Connect</a>
+    </nav>
+
+    <!--3. Semantic HTML: <section>-->
+    <section id="about">
+        <!--3. Semantic HTML: <article>-->
+        <article>
+            <h2>Personal Information</h2>
+            
+            <!--1. Create a Table: At least 3 rows and 3 columns-->
+            <table border="1" cellpadding="8" cellspacing="0">
+                <tr>
+                    <th>Attribute</th>
+                    <th>Detail</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>[Your Name]</td>
+                    <td>UMT Student</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>[Your Age]</td>
+                    <td>Semester 3</td>
+                </tr>
+                <tr>
+                    <td>Major</td>
+                    <td>Mobile Computing</td>
+                    <td>Looking for internships</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+    <section id="form-section">
+        <article>
+            <h2>User Questionnaire</h2>
+            
+            <!--2. Design a Simple Form: text, radio, checkbox, submit-->
+            <form action="#" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <p>Favorite Hobbies:</p>
+                <input type="checkbox" id="coding" name="hobbies" value="coding">
+                <label for="coding">Coding</label><br>
+                <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                <label for="gaming">Gaming</label><br>
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+    </section>
+
+    <!--3. Semantic HTML: <footer>-->
+    <footer>
+        <p>Lab Exercise 2 - lab2.html</p>
+    </footer>
+
+</body>
+</html>
