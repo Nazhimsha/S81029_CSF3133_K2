@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Contact Form</title>
+</head>
+
+<body>
+
+    <!-- Header div -->
+    <div>
+        <h1>An interactive contact form</h1>
+        <span>with an inline calculator</span>
+    </div>
+
+    <!-- Contact Form div -->
+    <div>
+        <h2>Contact Form</h2>
+
+        <form onsubmit="submitForm(event)">
+
+            <label>Email Address:</label>
+            <input type="email" required>
+            <br><br>
+
+            <label>Preferred Contact Date:</label>
+            <input type="date" required>
+            <br><br>
+
+            <label>Satisfaction Level:</label>
+            <input type="range" id="satisfaction"
+                   min="1" max="10" value="5"
+                   oninput="showLevel()">
+
+            <output id="level">5</output>
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <!-- Calculator div -->
+    <div>
+        <h2>Calculator</h2>
+
+        <label>First Number:</label>
+        <input type="number" id="num1"
+               oninput="calculateSum()">
+        <br><br>
+
+        <label>Second Number:</label>
+        <input type="number" id="num2"
+               oninput="calculateSum()">
+        <br><br>
+
+        <label>Sum:</label>
+        <output id="result">0</output>
+
+    </div>
+
+    <!-- Footer div -->
+    <div>
+        <h2>Contact Information</h2>
+
+        <p>Email: contact@example.com</p>
+        <p>Phone: 012-3456789</p>
+
+        <p>&copy; 2026 My Website</p>
+    </div>
+
+    <script>
+
+        function showLevel() {
+            let value = document.getElementById("satisfaction").value;
+
+            document.getElementById("level").value = value;
+        }
+
+        function calculateSum() {
+            let num1 = parseFloat(document.getElementById("num1").value) || 0;
+
+            let num2 = parseFloat(document.getElementById("num2").value) || 0;
+
+            document.getElementById("result").value = num1 + num2;
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+
+            alert("Your form has been submitted!");
+        }
+
+    </script>
+
+</body>
+</html>
