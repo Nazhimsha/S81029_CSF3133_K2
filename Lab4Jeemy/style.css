@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* --- Structure Styling --- */
+header {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 4px solid #b71c1c;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+section {
+    background: #fff;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #111;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- Navigation Styling (Requirement 1 & 4) --- */
+nav {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullets */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+/* Link States & Text Decoration (Requirement 4) */
+nav ul li a:link, 
+nav ul li a:visited {
+    display: block;
+    color: white;
+    text-decoration: none; /* Removes underline */
+    padding: 15px 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, 
+nav ul li a:active {
+    background-color: #b71c1c;
+    color: #fff;
+    text-decoration: underline; /* Adds underline on hover/active */
+}
+
+/* --- Media Styling (Requirement 3) --- */
+.video-wrapper {
+    text-align: center;
+    background: #000;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.video-wrapper video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+figcaption {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* --- Form Styling (Requirement 5) --- */
+.custom-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row label[for="name"], 
+.form-row label[for="email"], 
+.field-title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+input[type="text"], 
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus {
+    border-color: #b71c1c;
+    outline: none;
+}
+
+.radio-label, .check-label {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #b71c1c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #8b0000;
+}
+
+/* --- Footer Styling --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #888;
+    margin-top: 40px;
+}

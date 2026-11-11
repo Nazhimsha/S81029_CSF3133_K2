@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conor McGregor | UFC Highlights</title>
+    
+    <!--External CSS link-->
+    <link rel="stylesheet" href="style.css">
+    
+    <!--Internal CSS (Requirement 4)-->
+    <style>
+        .mcgregor-quote {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #b71c1c;
+            border-left: 4px solid #b71c1c;
+            padding-left: 10px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Conor "The Notorious" McGregor</h1>
+        <p>Former UFC Featherweight & Lightweight Double-Champion</p>
+    </header>
+
+    <!--Navigation bar (unordered list)-->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#media">Fight Videos</a></li>
+            <li><a href="#fan-club">Join Fan Club</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!--Structure: Section and Article-->
+        <section id="about">
+            <article>
+                <h2>The Rise of a Legend</h2>
+                <p>Conor McGregor is an Irish professional mixed martial artist. He changed the landscape of the UFC by becoming the first fighter in the promotion's history to hold championships in two weight classes simultaneously.</p>
+                <p class="mcgregor-quote">"We're not here to take part, we're here to take over!" - Conor McGregor</p>
+            </article>
+        </section>
+
+        <!--Media: Video with caption-->
+        <section id="media">
+            <h2>Latest McGregor Footage</h2>
+            <figure class="video-wrapper">
+                <!-- Replace 'mcgregor-highlight.mp4' with your actual video file later -->
+                <video controls width="100%">
+                    <source src="Mcgregor.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Caption: Training footage and octagon highlights of The Notorious.</figcaption>
+            </figure>
+        </section>
+
+        <!--Form styled with CSS-->
+        <section id="fan-club">
+            <h2>Join the McGregor Army</h2>
+            
+            <form action="#" method="POST" class="custom-form">
+                <!--Text Inputs-->
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+
+                <!--Radio Buttons-->
+                <div class="form-row">
+                    <p class="field-title">Gender:</p>
+                    <label class="radio-label"><input type="radio" name="gender" value="male" required> Male</label>
+                    <label class="radio-label"><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+
+                <!--Checkboxes-->
+                <div class="form-row">
+                    <p class="field-title">Favourite Hobbies:</p>
+                    <label class="check-label"><input type="checkbox" name="hobbies" value="mma"> Watching MMA</label>
+                    <label class="check-label"><input type="checkbox" name="hobbies" value="boxing"> Boxing</label>
+                    <label class="check-label"><input type="checkbox" name="hobbies" value="training"> Gym / Training</label>
+                </div>
+
+                <!--Submit Button-->
+                <div class="form-row">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Conor McGregor Fan Page. Designed for CSF3133 Lab 4.</p>
+    </footer>
+
+</body>
+</html>
