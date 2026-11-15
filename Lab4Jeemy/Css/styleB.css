@@ -1,0 +1,60 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+}
+
+/*Link States correctly ordered (LVHA)*/
+a:link {
+    color: #1A5276;
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:visited {
+    color: #7D3C98;
+}
+
+a:hover {
+    color: #E67E22;
+    background-color: #ddd;
+}
+
+a:active {
+    color: #C0392B;
+}
+
+/*Part 2: Old Price Styling*/
+.old-price {
+    text-decoration: line-through;
+    color: #7f8c8d;
+    margin-right: 8px;
+}
+
+/*Part 2: Responsive Video*/
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Part 2: Form Styling*/
+.feedback-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 500px;
+}
+
+.feedback-form fieldset {
+    border: 1px solid #aaa;
+    padding: 10px;
+}
