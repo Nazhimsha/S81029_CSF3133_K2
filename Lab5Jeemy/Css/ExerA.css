@@ -9,7 +9,7 @@ body {
 
 /*Header with Background Image*/
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("header-bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../Jpg/header-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
