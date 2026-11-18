@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <!-- External CSS -->
-    <link rel="stylesheet" href="ExerA.css">
+    <link rel="stylesheet" href="../Css/ExerA.css">
     <!--Internal CSS for h2-->
     <style>
         h2 {
