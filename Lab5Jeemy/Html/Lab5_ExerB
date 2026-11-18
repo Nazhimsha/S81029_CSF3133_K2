@@ -7,7 +7,7 @@
     <!--Part 2 (Step 8): Added Merriweather & Roboto Google Fonts in one link tag-->
     <link href="https://googleapis.com" rel="stylesheet">
     <!--Fixed Error 2: Changed rel="stylesheets" to rel="stylesheet"-->
-    <link rel="stylesheet" href="ExerB.css">
+    <link rel="stylesheet" href="../Css/ExerB.css">
 </head>
 <body>
 <!--
