@@ -2,7 +2,7 @@
 /*General Body Styling*/
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url("books.jpg");
+    background-image: url("../Jpg/books.jpg");
     background-repeat: no-repeat;
     background-position: right top;
     margin: 0;
