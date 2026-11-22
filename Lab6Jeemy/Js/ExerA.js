@@ -39,8 +39,8 @@ function playRound(playerChoice) {
     roundCount++;
 
     //Update images based on choices
-    document.getElementById("playerImg").src = playerChoice + "../Png/.png";
-    document.getElementById("computerImg").src = computerChoice + "../Png/.png";
+    document.getElementById("playerImg").src = "../Png/" + playerChoice + ".png";
+    document.getElementById("computerImg").src = "../Png/" + computerChoice + ".png";
 
     const resultEl = document.getElementById("result");
     let roundOutcome = "";
