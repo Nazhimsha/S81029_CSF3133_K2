@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSF3133 JavaScript Quiz</title>
+    <link rel="stylesheet" href="ExerWonder.css">
+</head>
+<body>
+    <main class="quiz-container">
+        <header>
+            <h1>Web-Based Interface Design Quiz</h1>
+            <p>Test your knowledge of HTML, CSS, and JavaScript!</p>
+        </header>
+
+        <section id="quiz-section">
+            <div class="quiz-header-bar">
+                <span id="question-progress">Question 1 of 5</span>
+                <div id="timer">Time Left: <span id="time-left">15</span>s</div>
+            </div>
+
+            <h2 id="question-text">Question goes here</h2>
+            <div id="options-container" class="options-grid"></div>
+        </section>
+
+        <section id="feedback-section" class="hidden">
+            <p id="feedback-text"></p>
+        </section>
+
+        <section class="controls">
+            <button id="submit-btn" onclick="checkAnswer()" disabled>Submit Answer</button>
+            <button id="next-btn" onclick="nextQuestion()" class="hidden">Next Question</button>
+            <button id="restart-btn" onclick="startQuiz()" class="hidden">Restart Quiz</button>
+        </section>
+
+        <footer>
+            <p id="score-display">Current Score: 0 / 0</p>
+        </footer>
+    </main>
+
+    <script src="ExerWonder.js"></script>
+</body>
+</html>
