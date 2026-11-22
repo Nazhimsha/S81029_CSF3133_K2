@@ -3,52 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jeemy's Web Lab Portfolio</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --primary-light: #eff6ff;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 3rem 1.5rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        .lab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .lab-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .lab-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card-header h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .badge {
+            background: var(--primary-light);
+            color: var(--primary);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.65rem;
+            border-radius: 9999px;
+        }
+
+        .exercise-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .exercise-list a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            color: var(--text-main);
+            background: var(--bg-color);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid transparent;
+            transition: all 0.15s ease;
+        }
+
+        .exercise-list a:hover {
+            background: var(--primary-light);
+            color: var(--primary-hover);
+            border-color: #bfdbfe;
+            padding-left: 1.2rem;
+        }
+
+        .arrow {
+            color: var(--text-muted);
+            font-size: 1rem;
+            transition: transform 0.15s ease, color 0.15s ease;
+        }
+
+        .exercise-list a:hover .arrow {
+            color: var(--primary);
+            transform: translateX(3px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>List of lab</h1>
-    <h2>Lab 1</h2>
-    <ol>
-        <li><a href="Lab1Jeemy/Html/Lab1WonderExer.html"> Lab 1 : EXERCISE WONDERBUUK</a></li>
-        <li><a href="Lab1Jeemy/Html/lab1_ExerA.html"> Lab 1 : EXERCISE A</a></li>
-        <li><a href="Lab1Jeemy/Html/lab1_ExerB.html"> Lab 1 : EXERCISE B</a></li>
-    </ol>
 
-        <h2>Lab 2</h2>
-    <ol>
-        <li><a href="Lab2Jeemy/Lab2ExerWonder.html"> Lab 2 : EXERCISE WONDERBUUK</a></li>
-        <li><a href="Lab2Jeemy/Lab2_Exer2.html"> Lab 2 : EXERCISE 2</a></li>
-        <li><a href="Lab2Jeemy/Lab2_ExerA.html"> Lab 2 : EXERCISE A</a></li>
-        <li><a href="Lab2Jeemy/Lab2_ExerB.html"> Lab 2 : EXERCISE B</a></li>        
-    </ol>
+    <div class="container">
+        <header>
+            <h1>Web Programming Labs</h1>
+            <p>Directory of completed lab exercises and coursework</p>
+        </header>
 
-            <h2>Lab 3</h2>
-    <ol>
-        <li><a href="Lab3Jeemy/Lab3ExerWonder.html"> Lab 3 : EXERCISE WONDERBUUK</a></li>
-        <li><a href="Lab3Jeemy/Lab3_ExerA.html"> Lab 3 : EXERCISE A</a></li>
-        <li><a href="Lab3Jeemy/Lab3_ExerB.html"> Lab 3 : EXERCISE B</a></li>
-    </ol>
+        <main class="lab-grid">
+            <!-- Lab 1 -->
+            <section class="lab-card">
+                <div class="card-header">
+                    <h2>Lab 1</h2>
+                    <span class="badge">3 Exercises</span>
+                </div>
+                <ul class="exercise-list">
+                    <li><a href="Lab1Jeemy/Html/Lab1WonderExer.html"><span>Exercise Wonderbuuk</span><span class="arrow">&rarr;</span></a></li>
+                    <li><a href="Lab1Jeemy/Html/lab1_ExerA.html"><span>Exercise A</span><span class="arrow">&rarr;</span></a></li>
+                    <li><a href="Lab1Jeemy/Html/lab1_ExerB.html"><span>Exercise B</span><span class="arrow">&rarr;</span></a></li>
+                </ul>
+            </section>
 
-                <h2>Lab 4</h2>
-    <ol>
-        <li><a href="Lab4Jeemy/Html/Lab4ExerWonder.html"> Lab 4 : EXERCISE WONDERBUUK</a></li>
-        <li><a href="Lab4Jeemy/Html/Lab4_ExerA.html"> Lab 4 : EXERCISE A</a></li>
-        <li><a href="Lab4Jeemy/Html/Lab4_ExerB.html"> Lab 4 : EXERCISE B</a></li>
-    </ol>
+            <!-- Lab 2 -->
+            <section class="lab-card">
+                <div class="card-header">
+                    <h2>Lab 2</h2>
+                    <span class="badge">4 Exercises</span>
+                </div>
+                <ul class="exercise-list">
+                    <li><a href="Lab2Jeemy/Lab2ExerWonder.html"><span>Exercise Wonderbuuk</span><span class="arrow">&rarr;</span></a></li>
+                    <li><a href="Lab2Jeemy/Lab2_Exer2.html"><span>Exercise 2</span><span class="arrow">&rarr;</span></a></li>
+                    <li><a href="Lab2Jeemy/Lab2_ExerA.html"><span>Exercise A</span><span class="arrow">&rarr;</span></a></li>
+                    <li><a href="Lab2Jeemy/Lab2_ExerB.html"><span>Exercise B</span><span class="arrow">&rarr;</span></a></li>
+                </ul>
+            </section>
 
+            <!-- Lab 3 -->
+            <section class="lab-card">
+                <div class="card-header">
+                    <h2>Lab 3</h2>
+                    <span class="badge">3 Exercises</span>
+                </div>
+                <ul class="exercise-list">
+                    <li><a href="Lab3Jeemy/Lab3ExerWonder.html"><span>Exercise Wonderbuuk</span><span class="arrow">&rarr;</span></a></li>
+                    <li><a href="Lab3Jeemy/Lab3_ExerA.html"><span>Exercise A</span><span class="arrow">&rarr;</span></a></li>
+                    <li><a href="Lab3Jeemy/Lab3_ExerB.html"><span>Exercise B</span><span class="arrow">&rarr;</span></a></li>
+                </ul>
+            </section>
+
+            <!-- Lab 4 -->
+            <section class="lab-card">
+                <div class="card-header">
+                    <h2>Lab 4</h2>
+                    <span class="badge">3 Exercises</span>
+                </div>
+                <ul class="exercise-list">
+                    <li><a href="Lab4Jeemy/Html/Lab4ExerWonder.html"><span>Exercise Wonderbuuk</span><span class="arrow">&rarr;</span></a></li>
+                    <li><a href="Lab4Jeemy/Html/Lab4_ExerA.html"><span>Exercise A</span><span class="arrow">&rarr;</span></a></li>
+                    <li><a href="Lab4Jeemy/Html/Lab4_ExerB.html"><span>Exercise B</span><span class="arrow">&rarr;</span></a></li>
+                </ul>
+            </section>
+
+            <!-- Lab 5 -->
+            <section class="lab-card">
+                <div class="card-header">
                     <h2>Lab 5</h2>
-    <ol>
-        <li><a href="Lab5Jeemy/Html/Lab5ExerWonder.html"> Lab 5 : EXERCISE WONDERBUUK</a></li>
-        <li><a href="Lab5Jeemy/Html/Lab5_ExerA.html"> Lab 5 : EXERCISE A</a></li>
-        <li><a href="Lab5Jeemy/Html/Lab5_ExerB.html"> Lab 5 : EXERCISE B</a></li>
-    </ol>
+                    <span class="badge">3 Exercises</span>
+                </div>
+                <ul class="exercise-list">
+                    <li><a href="Lab5Jeemy/Html/Lab5ExerWonder.html"><span>Exercise Wonderbuuk</span><span class="arrow">&rarr;</span></a></li>
+                    <li><a href="Lab5Jeemy/Html/Lab5_ExerA.html"><span>Exercise A</span><span class="arrow">&rarr;</span></a></li>
+                    <li><a href="Lab5Jeemy/Html/Lab5_ExerB.html"><span>Exercise B</span><span class="arrow">&rarr;</span></a></li>
+                </ul>
+            </section>
 
-                        <h2>Lab 6</h2>
-    <ol>
-        <li><a href="Lab6Jeemy/Html/Lab6ExerWonder.html"> Lab 6 : EXERCISE WONDERBUUK</a></li>
-        <li><a href="Lab6Jeemy/Html/Lab6_ExerA.html"> Lab 6 : EXERCISE A</a></li>
-        <li><a href="Lab6Jeemy/Html/Lab6_ExerB.html"> Lab 6 : EXERCISE B</a></li>
-    </ol>
+            <!-- Lab 6 -->
+            <section class="lab-card">
+                <div class="card-header">
+                    <h2>Lab 6</h2>
+                    <span class="badge">3 Exercises</span>
+                </div>
+                <ul class="exercise-list">
+                    <li><a href="Lab6Jeemy/Html/Lab6ExerWonder.html"><span>Exercise Wonderbuuk</span><span class="arrow">&rarr;</span></a></li>
+                    <li><a href="Lab6Jeemy/Html/Lab6_ExerA.html"><span>Exercise A</span><span class="arrow">&rarr;</span></a></li>
+                    <li><a href="Lab6Jeemy/Html/Lab6_ExerB.html"><span>Exercise B</span><span class="arrow">&rarr;</span></a></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Hosted on GitHub Pages &bull; Jeemy</p>
+        </footer>
+    </div>
 
 </body>
 </html>
